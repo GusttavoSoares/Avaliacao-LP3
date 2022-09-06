@@ -1,0 +1,33 @@
+@model List<Avaliacao3BimLP3.ViewModels.LojaViewModel>
+
+@{
+    ViewData["Title"] = "Lista de Lojas";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lista de lojas</h1>
+</div>
+
+@if(Model.Count == 0)
+{
+    <p>Não há lojas e kiosques cadastrados</p>
+}
+else 
+{
+<p> @Model.Count lojas cadastradas </p>
+
+@foreach (var loja in Model)
+{
+    <p> @loja.Piso </p>
+    <p> @loja.Nome </p>
+    <p> @loja.Descricao </p>
+   if (loja.IsLoja)
+   {
+   <p> Loja </p>
+   }
+   else 
+   {
+   <p> Kiosque </p>
+   }
+}
+}
