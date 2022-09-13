@@ -33,4 +33,16 @@ public class LojaController : Controller
         lojas.RemoveAt(id - 1);
         return View("AdminIndex");
     }
+
+    public IActionResult AdminCreate()
+    {
+        return View();
+    }
+
+     public IActionResult AdminResult([FromForm] LojaViewModel loja)
+    {
+        LojaViewModel lojaCreate = new LojaViewModel(loja.Id, loja.Piso, loja.Nome, loja.Descricao, true, loja.Email);
+        lojas.Add(loja);
+        return View("AdminIndex");
+    }
 }

@@ -6,29 +6,27 @@
     <h3 class="display-4">Cadastrar Loja</h3>
 </div>
 
+<form action="AdminResult" method="post">
+    <label for="id">Id</label>  <br> 
+    <input type="number" name="id" id="id"> <br><br>
 
+    <label for="piso">Piso:</label>  <br> 
+     <input type="text" name="piso" id="psio"> <br><br>
 
-<form action="#" method="post">
-    <label for="Id">Número 1</label>  <br> 
-    <input type="number" name="Id" id="Id"> <br><br>
+    <label for="nome">Nome</label> <br> 
+    <input type="text" name="nome" id="nome"> <br><br>
 
-    <label for="Piso">Piso</label> <br> 
-    <input type="number" name="number2" id="number2"> <br><br>
+    <label for="descricao">Descrição</label> <br> 
+    <input type="text" name="descricao" id="descricao"> <br><br>
 
-    <label for="Descricao">Descrição</label> <br> 
-    <input type="text" name="Descricao" id="Descricao"> <br><br>
-
-    <label for="Piso">Piso</label> <br> 
-    <input type="number" name="number2" id="number2"> <br><br>
-
-    <label for="operacao">Operação:</label>  <br> 
-    <select name="operacao">
-        <option value="Soma">Somar</option>
-        <option value="Subtracao">Subtrair</option>
-        <option value="Multiplicacao">Multiplicar</option>
-        <option value="Divisao">Dividir</option>
+    <label for="isloja">Tipo:</label>  <br> 
+    <select name="isloja"> 
+        <option value="true">Loja</option>
+        <option value="false">Kisoque</option>
     </select> <br> <br> 
-    
-   
-    <button type="submit">Calcular</button>
+
+    <label for="email">E-mail</label> <br> 
+    <input type="email" name="email" id="email"> <br><br>
+
+    <button type="submit">Enviar</button>
 </form>
