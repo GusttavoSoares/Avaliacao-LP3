@@ -21,15 +21,7 @@ else
     <p> @loja.Piso </p>
     <p> @loja.Nome </p>
     <p> @loja.Descricao </p>
-
-   if (loja.IsLoja) 
-   {
-   <p> Loja </p>
-   }
-   else 
-   {
-   <p> Kiosque </p>
-   }
+    <p> @loja.Tipo </p>
    <a href="AdminShow/@loja.Id"> <button type="button"> Detalhes </button> </a>
    <a href="AdminDelete/@loja.Id"> <button type="button"> Excluir Loja </button> </a>
     }

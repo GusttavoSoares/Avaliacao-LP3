@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/estudante/Downloads/Avaliacao-LP3/Avaliacao3BimLP3.csproj": {}
+    "/home/gustavo/Programacao/Lp3/Avaliacao-LP3/Avaliacao3BimLP3.csproj": {}
   },
   "projects": {
-    "/home/estudante/Downloads/Avaliacao-LP3/Avaliacao3BimLP3.csproj": {
+    "/home/gustavo/Programacao/Lp3/Avaliacao-LP3/Avaliacao3BimLP3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/estudante/Downloads/Avaliacao-LP3/Avaliacao3BimLP3.csproj",
+        "projectUniqueName": "/home/gustavo/Programacao/Lp3/Avaliacao-LP3/Avaliacao3BimLP3.csproj",
         "projectName": "Avaliacao3BimLP3",
-        "projectPath": "/home/estudante/Downloads/Avaliacao-LP3/Avaliacao3BimLP3.csproj",
-        "packagesPath": "/home/estudante/.nuget/packages/",
-        "outputPath": "/home/estudante/Downloads/Avaliacao-LP3/obj/",
+        "projectPath": "/home/gustavo/Programacao/Lp3/Avaliacao-LP3/Avaliacao3BimLP3.csproj",
+        "packagesPath": "/home/gustavo/.nuget/packages/",
+        "outputPath": "/home/gustavo/Programacao/Lp3/Avaliacao-LP3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/estudante/.nuget/NuGet/NuGet.Config"
+          "/home/gustavo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
