@@ -8,13 +8,13 @@
     <h1 class="display-4">Gerenciar lojas</h1>
 </div>
 
-@* @if(Model.Count == 0)
+@if(Model.Count == 0)
 {
     <p>Não há lojas e kiosques cadastrados</p>
 }
-else  *@
-
-@* <p> @Model.Count lojas cadastradas </p> *@
+else 
+{
+<p> @Model.Count lojas cadastradas </p>
 
 @foreach (var loja in Model)
 {
@@ -34,4 +34,4 @@ else  *@
    <a href="AdminDelete/@loja.Id"> <button type="button"> Excluir Loja </button> </a>
    <hr>
     }
-
+}

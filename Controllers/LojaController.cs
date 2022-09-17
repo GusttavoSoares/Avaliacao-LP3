@@ -25,7 +25,14 @@ public class LojaController : Controller
 
     public IActionResult AdminShow(int id)
     {
-        return View(lojas[ id-1 ]);
+        foreach (var loja in lojas)
+        {
+            if(loja.Id == id) {
+                return View(loja);
+            }
+        }
+        return View(); // nunca vai cair aqui se passar um Id válido, entretanto poderia retornar uma mensagem para valores válidos
+    
     }
 
     public IActionResult AdminDelete(int id)
