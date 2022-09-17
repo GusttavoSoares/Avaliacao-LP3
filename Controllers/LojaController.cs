@@ -8,9 +8,9 @@ public class LojaController : Controller
   
     private static List<LojaViewModel> lojas =
     new List<LojaViewModel> {
-        new LojaViewModel(1, "piso 3", "Tênis Brasil", "Aqui você encontra os tênis", "Loja", "tenis@email.com"),
-        new LojaViewModel(2, "piso 3", "Lembranças Já", "Vem comprar sua lembrança", "Loja", "lemb@email.com"),
-        new LojaViewModel(3, "piso 1", "Sorvetinho Gelado", "Sorvetinho Gelado", "Kisoque", "sorvet@email.com"),
+        new LojaViewModel(1, "piso 3", "Tênis Brasil", "Aqui você encontra os tênis", true, "tenis@email.com"),
+        new LojaViewModel(2, "piso 3", "Lembranças Já", "Vem comprar sua lembrança", true, "lemb@email.com"),
+        new LojaViewModel(3, "piso 1", "Sorvetinho Gelado", "Sorvetinho Gelado", false, "sorvet@email.com"),
     };
         
     public IActionResult Index()
@@ -41,8 +41,8 @@ public class LojaController : Controller
 
      public IActionResult AdminResult([FromForm] LojaViewModel loja)
     {
-        LojaViewModel lojaCreate = new LojaViewModel(loja.Id, loja.Piso, loja.Nome, loja.Descricao, loja.Tipo, loja.Email);
+        LojaViewModel lojaCreate = new LojaViewModel(loja.Id, loja.Piso, loja.Nome, loja.Descricao, loja.IsLoja, loja.Email);
         lojas.Add(lojaCreate);
-        return View("AdminCreate");
+        return View();
     }
 }
