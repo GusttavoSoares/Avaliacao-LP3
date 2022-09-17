@@ -46,9 +46,15 @@ public class LojaController : Controller
         return View();
     }
 
-     public IActionResult AdminResult([FromForm] LojaViewModel loja)
+     public IActionResult AdminResult([FromForm] LojaViewModel lojaCreate)
     {
-        LojaViewModel lojaCreate = new LojaViewModel(loja.Id, loja.Piso, loja.Nome, loja.Descricao, loja.IsLoja, loja.Email);
+        foreach (var loja in lojas)
+        {
+            if(loja.Nome == lojaCreate.Nome) {
+                return View("CreateError");
+            }
+        }
+
         lojas.Add(lojaCreate);
         return View();
     }
